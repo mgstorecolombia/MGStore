@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- ===== SEO & METAS ===== -->
+    <title>MG Store | Tecnología en Cali</title>
+    <meta
+      name="description"
+      content="MG Store: tienda virtual de tecnología en Cali, Colombia. AirPods, diademas, smartwatches, parlantes y accesorios al alcance de todos."
+    />
+    <meta property="og:title" content="MG Store | Tecnología en Cali" />
+    <meta
+      property="og:description"
+      content="Tecnología que quieres, al alcance de todos. Envío y recogida en Cali."
+    />
+    <meta property="og:image" content="imagenes/marca/logo-600.jpg" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>document.documentElement.classList.add("js")</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MG Store","logo":"imagenes/marca/logo-600.jpg","sameAs":["https://www.instagram.com/mgstore_col/","https://www.tiktok.com/@mgstore.co"]}</script>
+
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="icon" type="image/jpeg" href="imagenes/marca/logo-192.jpg" />
+    <link rel="apple-touch-icon" href="imagenes/marca/logo-192.jpg" />
+    <link rel="preload" as="image" href="imagenes/marca/logo-600.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <noscript><style>#cargador{display:none}body.cargando{overflow:auto}.contenido-inicio>*{opacity:1!important;transform:none!important}</style></noscript>
+    <!-- ===== FUENTES ===== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== CSS EXTERNO ===== -->
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body class="cargando">
+    <div id="cargador" role="status" aria-label="Cargando MG Store">
+      <div class="cargador-marca">
+        <img src="imagenes/marca/logo-600.jpg" width="600" height="600" alt="MG Store — Tecnología que quieres, al alcance de todos." />
+        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="49.5" pathLength="1"></circle></svg>
+      </div>
+    </div>
+
+    <!-- =====================================================
+    HEADER
+    ===================================================== -->
+    <header>
+      <a href="#inicio" class="logo" aria-label="MG Store - Inicio" onclick="cerrarMenu()"><img src="imagenes/marca/logo-192.jpg" width="40" height="40" alt="" /><span>MG STORE</span></a>
+      <button class="menu-hamburguesa" id="menu-hamburguesa" aria-label="Abrir menú" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      <nav id="nav-principal">
+        <a href="#inicio" onclick="cerrarMenu()">Inicio</a>
+        <a href="#catalogo" onclick="cerrarMenu()">Catálogo</a>
+        <a href="#categorias" onclick="cerrarMenu()">Categorías</a>
+        <a href="#nosotros" onclick="cerrarMenu()">Nosotros</a>
+        <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- =====================================================
+    INICIO
+    ===================================================== -->
+    <section id="inicio" class="hero">
+      <div class="contenido-inicio">
+        <h1>Tecnología que quieres, al alcance de todos.</h1>
+        <p class="texto-inicio">Tienda virtual de tecnología en Cali. Productos modernos, precios competitivos y atención personalizada.</p>
+        <div class="hero-acciones">
+          <a href="#catalogo" class="boton-primario">Ver catálogo</a>
+          <a href="https://wa.me/573217484064?text=Hola%20MG%20Store,%20estoy%20interesado%20en%20sus%20productos." target="_blank" rel="noopener noreferrer" class="boton-linea">Comprar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    PRODUCTOS DESTACADOS
+    ===================================================== -->
+    <section id="destacados">
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion"><span>Productos destacados</span></h2>
+        <p>Una selección de lo más pedido en MG Store.</p>
+      </div>
+      <div id="contenedor-destacados" class="catalogo activo"></div>
+    </section>
+
+    <!-- =====================================================
+    CATEGORÍAS
+    ===================================================== -->
+    <section id="categorias">
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion"><span>Explora por categoría</span></h2>
+        <p>Encuentra justo lo que necesitas.</p>
+      </div>
+      <div class="grid-categorias">
+        <button class="tarjeta-categoria" onclick="irACategoriaDesdeTarjeta('airpods')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 18v-6a3 3 0 0 1 6 0v6"/><rect x="5" y="16" width="4" height="6" rx="2"/><rect x="15" y="16" width="4" height="6" rx="2"/></svg>
+          <span>Audífonos</span>
+        </button>
+        <button class="tarjeta-categoria" onclick="irACategoriaDesdeTarjeta('smartwatches')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 7V4h6v3M9 17v3h6v-3"/></svg>
+          <span>Smartwatches</span>
+        </button>
+        <button class="tarjeta-categoria" onclick="irACategoriaDesdeTarjeta('parlantes')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="2" width="16" height="20" rx="3"/><circle cx="12" cy="14" r="4"/><circle cx="12" cy="6" r="1" fill="currentColor"/></svg>
+          <span>Parlantes</span>
+        </button>
+        <button class="tarjeta-categoria" onclick="irACategoriaDesdeTarjeta('cargadores')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          <span>Cargadores y accesorios</span>
+        </button>
+        <button class="tarjeta-categoria" onclick="irACategoriaDesdeTarjeta('estuches')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="3" width="12" height="18" rx="3"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>
+          <span>Estuches y fundas</span>
+        </button>
+        <button class="tarjeta-categoria" onclick="irACategoriaDesdeTarjeta('otros')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 3h10l-1 5a4 4 0 0 1-8 0L7 3z"/><path d="M9 12v7a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-7"/></svg>
+          <span>Otros</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    CATÁLOGO
+    ===================================================== -->
+    <section id="catalogo">
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion"><span>Catálogo</span></h2>
+        <p>Explora todos nuestros productos disponibles.</p>
+      </div>
+
+      <!-- Buscador -->
+      <div class="barra-busqueda">
+        <svg class="icono-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="buscador-producto" class="input-busqueda" placeholder="Busca tu producto por nombre..." oninput="buscarProducto(this.value)" aria-label="Buscar producto por nombre" />
+        <button type="button" id="boton-limpiar-busqueda" class="boton-limpiar-busqueda" onclick="limpiarBusqueda()" aria-label="Limpiar búsqueda" style="display: none">&times;</button>
+      </div>
+
+      <!-- Categorías principales -->
+      <div class="filtros-superiores">
+        <div class="categorias" aria-label="Categorías de productos">
+          <button class="boton-categoria activo" data-categoria="airpods" onclick="mostrarCatalogo('airpods', this)">Audífonos</button>
+          <button class="boton-categoria" data-categoria="smartwatches" onclick="mostrarCatalogo('smartwatches', this)">Smartwatches</button>
+          <button class="boton-categoria" data-categoria="parlantes" onclick="mostrarCatalogo('parlantes', this)">Parlantes</button>
+          <button class="boton-categoria" data-categoria="cargadores" onclick="mostrarCatalogo('cargadores', this)">Cargadores y accesorios</button>
+          <button class="boton-categoria" data-categoria="estuches" onclick="mostrarCatalogo('estuches', this)">Estuches y fundas</button>
+          <button class="boton-categoria" data-categoria="otros" onclick="mostrarCatalogo('otros', this)">Otros</button>
+        </div>
+      </div>
+
+      <!-- Filtro por marca (se genera automáticamente con JS) -->
+      <div class="filtros-adicionales" id="filtros-marca"></div>
+
+      <!-- Contenedor de catálogo -->
+      <div id="contenedor-catalogo" class="catalogo activo"></div>
+      <noscript><p>Catálogo (pídelo por WhatsApp al +57 321 748 4064): AirPods, diademas, smartwatches, parlantes, cargadores y accesorios.</p></noscript>
+    </section>
+
+    <!-- =====================================================
+    NOSOTROS
+    ===================================================== -->
+    <section id="nosotros">
+      <div class="encabezado-seccion"><h2 class="titulo-seccion"><span>Sobre MG Store</span></h2></div>
+      <div class="nosotros-grid">
+        <p class="nosotros-frase">Tecnología moderna, a precios que sí puedes pagar.</p>
+        <div class="texto-nosotros">
+          <p><strong>MG Store</strong> es una tienda virtual de tecnología y accesorios tecnológicos ubicada en Cali, Colombia.</p>
+          <p>Ofrecemos productos modernos y atractivos a precios competitivos, con atención personalizada y confiable.</p>
+          <p>Aunque nuestro modelo principal es virtual, contamos con la opción de recoger los pedidos personalmente en Cali.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    POR QUÉ ELEGIR MG STORE
+    ===================================================== -->
+    <section id="elaboracion">
+      <div class="encabezado-seccion"><h2 class="titulo-seccion"><span>¿Por qué elegir MG Store?</span></h2></div>
+      <div class="proceso">
+        <div class="paso"><span>01</span><h3>Precios competitivos</h3><p>Productos tecnológicos de calidad a precios justos, sin intermediarios.</p></div>
+        <div class="paso"><span>02</span><h3>Atención personalizada</h3><p>Te asesoramos por WhatsApp para que elijas el producto ideal.</p></div>
+        <div class="paso"><span>03</span><h3>Confianza</h3><p>Compra segura, con la opción de recoger tu pedido en Cali.</p></div>
+        <div class="paso"><span>04</span><h3>Variedad</h3><p>AirPods, diademas, smartwatches, parlantes y mucho más.</p></div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    CONTACTO
+    ===================================================== -->
+    <section id="contacto">
+      <div class="encabezado-seccion"><h2 class="titulo-seccion"><span>Contacto</span></h2><p>Escríbenos y te ayudamos a elegir tu próximo producto.</p></div>
+      <div class="contactos">
+        <a href="https://wa.me/573217484064?text=Hola%20MG%20Store,%20estoy%20interesado%20en%20sus%20productos." target="_blank" rel="noopener noreferrer" class="contacto-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span><b>WhatsApp</b><small>+57 321 748 4064</small></span></a>
+        <a href="mailto:mgstorebusinesss@gmail.com" class="contacto-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><b>Correo</b><small>mgstorebusinesss@gmail.com</small></span></a>
+        <a href="https://www.instagram.com/mgstore_col/" target="_blank" rel="noopener noreferrer" class="contacto-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span><b>Instagram</b><small>@mgstore_col</small></span></a>
+        <a href="https://www.tiktok.com/@mgstore.co" target="_blank" rel="noopener noreferrer" class="contacto-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M16 3v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M16 3c.5 2.5 2 4 4 4.3"/></svg><span><b>TikTok</b><small>@mgstore.co</small></span></a>
+        <a href="https://maps.google.com/?q=Cra.+11F+%2333B-23,+Comuna+8,+Cali,+Valle+del+Cauca" target="_blank" rel="noopener noreferrer" class="contacto-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 22s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span><b>Recogida en Cali</b><small>Cra. 11F #33B-23, Comuna 8</small></span></a>
+      </div>
+    </section>
+
+    <!-- =====================================================
+    MODAL DE DETALLE
+    ===================================================== -->
+    <div id="modal-overlay" class="modal-overlay" onclick="cerrarDetalleSiEsFondo(event)">
+      <div class="modal-contenido" role="dialog" aria-modal="true" aria-labelledby="modal-nombre">
+        <button class="modal-cerrar" onclick="cerrarDetalle()" aria-label="Cerrar modal">&times;</button>
+        <div class="modal-imagen">
+          <div class="spinner" id="modal-spinner"></div>
+          <img id="modal-imagen" src="" alt="" />
+        </div>
+        <div class="modal-info">
+          <p id="modal-marca" class="marca-producto"></p>
+          <h3 id="modal-nombre" class="nombre-producto"></h3>
+          <p id="modal-descripcion" class="descripcion-producto"></p>
+
+          <div id="modal-precios" class="precios">
+            <span id="modal-precio-anterior" class="precio-anterior"></span>
+            <span id="modal-precio-promocion" class="precio-promocion"></span>
+          </div>
+
+          <div id="modal-variantes-wrapper" style="display:none">
+            <p class="etiqueta-tamano" id="modal-tipo-variante">Elige una opción:</p>
+            <div id="modal-selector-variante" class="selector-talla"></div>
+            <div class="precios" style="margin-top:14px">
+              <span id="modal-precio-variante" class="precio-valor"></span>
+            </div>
+          </div>
+
+          <a id="modal-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="boton-primario modal-boton-whatsapp">Pedir por WhatsApp</a>
+          <button class="boton-agregar-carrito" onclick="agregarAlCarritoDesdeModal()">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================
+    MODAL DEL CARRITO
+    ===================================================== -->
+    <div id="modal-carrito-overlay" class="modal-overlay" onclick="cerrarCarritoSiEsFondo(event)">
+      <div class="modal-carrito-contenido" role="dialog" aria-modal="true" aria-labelledby="titulo-carrito">
+        <button class="modal-cerrar" onclick="cerrarCarrito()" aria-label="Cerrar carrito">&times;</button>
+        <h2 class="titulo-carrito" id="titulo-carrito">Tu carrito</h2>
+        <div id="lista-carrito" class="lista-carrito"></div>
+        <div class="carrito-total" id="carrito-total">Total: $0</div>
+        <button class="boton-pago-carrito nequi" onclick="pagarConNequi()">Solicitar pago por Nequi</button>
+        <button class="boton-linea" onclick="enviarCarritoPorWhatsApp()" style="width: 100%; margin-top: 10px">Enviar pedido por WhatsApp</button>
+        <button class="boton-vaciar-carrito" onclick="vaciarCarrito()">Vaciar carrito</button>
+      </div>
+    </div>
+
+    <!-- =====================================================
+    CARRITO FLOTANTE
+    ===================================================== -->
+    <button type="button" id="carrito-flotante" class="carrito-flotante" onclick="abrirCarrito()" aria-label="Ver carrito de compras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="carrito-contador" id="carrito-contador">0</span></button>
+
+    <!-- =====================================================
+    FOOTER
+    ===================================================== -->
+    <a class="wa-flotante" href="https://wa.me/573217484064?text=Hola%20MG%20Store,%20estoy%20interesado%20en%20sus%20productos." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></a>
+
+    <footer>
+      <img class="logo-footer" src="imagenes/marca/logo-192.jpg" width="88" height="88" alt="MG Store" loading="lazy" />
+      <p class="lema">Tecnología que quieres, al alcance de todos.</p>
+      <div class="enlaces-footer"><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a><a href="https://www.instagram.com/mgstore_col/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/@mgstore.co" target="_blank" rel="noopener noreferrer">TikTok</a></div>
+      <p class="copyright">© 2026 MG Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- =====================================================
+    JAVASCRIPT
+    ===================================================== -->
+    <script src="productos.js"></script>
+    <script src="app.js"></script>
+    <script>
+      (function () {
+        const b = document.body, c = document.getElementById("cargador"), h = document.querySelector("header");
+        let listo = false;
+        function abrir() {
+          if (listo) return;
+          listo = true;
+          c.classList.add("listo");
+          b.classList.remove("cargando");
+          b.classList.add("entrada");
+          setTimeout(() => c.remove(), 1200);
+        }
+        let visto = null;
+        try { visto = sessionStorage.getItem("mgv"); sessionStorage.setItem("mgv", "1"); } catch (e) {}
+        const minimo = new Promise((r) => setTimeout(r, visto ? 0 : 1200));
+        const cargada = new Promise((r) => (document.readyState === "complete" ? r() : addEventListener("load", r)));
+        Promise.all([minimo, cargada]).then(abrir);
+        setTimeout(abrir, 3500);
+        const f = () => h.classList.toggle("solido", scrollY > 40);
+        f();
+        addEventListener("scroll", f, { passive: true });
+      })();
+    </script>
+  </body>
+</html>
