@@ -160,6 +160,48 @@ const productos = {
       precioPromocion: "$10.000",
       img: "imagenes/productos/ventosa-pequena.jpg",
     },
+    {
+      nombre: "Adaptador de corriente Apple 40W (ORIGINAL)",
+      marca: "Apple",
+      desc: "Producto 100% original de Apple. Cubo de carga rápida de 40W con puerto USB-C para máxima eficiencia y cuidado de la batería.",
+      precioPromocion: "$100.000",
+      img: "imagenes/productos/adaptador-apple-40w.jpg",
+    },
+    {
+      nombre: "Adaptador de corriente Apple 20W (ORIGINAL)",
+      marca: "Apple",
+      desc: "Producto 100% original de Apple. Cubo de carga rápida de 20W con entrada USB-C, compacto y seguro para tus dispositivos.",
+      precioPromocion: "$60.000",
+      img: "imagenes/productos/adaptador-apple-20w.jpg",
+    },
+    {
+      nombre: "Cable Apple USB-C a Lightning (ORIGINAL)",
+      marca: "Apple",
+      desc: "Producto 100% original de Apple. Cable resistente para carga rápida y sincronización de datos en dispositivos con entrada Lightning.",
+      precioPromocion: "$60.000",
+      img: "imagenes/productos/cable-apple-usbc-lightning.jpg",
+    },
+    {
+      nombre: "Cable Apple USB-C a USB-C (ORIGINAL)",
+      marca: "Apple",
+      desc: "Producto 100% original de Apple. Cable de carga rápida y transferencia de datos para iPhone 15/16, iPad y MacBook.",
+      precioPromocion: "$60.000",
+      img: "imagenes/productos/cable-apple-usbc-usbc.jpg",
+    },
+    {
+      nombre: "Combo Apple 20W + Cable USB-C a Lightning (ORIGINAL)",
+      marca: "Apple",
+      desc: "Producto 100% original de Apple. Kit completo de carga rápida con adaptador de 20W y cable USB-C a Lightning.",
+      precioPromocion: "$120.000",
+      img: "imagenes/productos/combo-apple-20w-lightning.jpg",
+    },
+    {
+      nombre: "Combo Apple 20W + Cable USB-C a USB-C (ORIGINAL)",
+      marca: "Apple",
+      desc: "Producto 100% original de Apple. Kit completo de carga rápida con adaptador de 20W y cable USB-C a USB-C.",
+      precioPromocion: "$120.000",
+      img: "imagenes/productos/combo-apple-20w-usbc.jpg",
+    },
   ],
   estuches: [
     {
