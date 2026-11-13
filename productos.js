@@ -28,7 +28,7 @@ const productos = {
       nombre: "AirPod Max",
       marca: "AirPod",
       desc: "Audífonos tipo diadema de alta gama, almohadillas imantadas, con sonido envolvente y materiales premium.",
-      precioPromocion: "$110.000",
+      precioPromocion: "$100.000",
       destacado: true,
       img: "imagenes/productos/airpod-max.jpg",
     },
