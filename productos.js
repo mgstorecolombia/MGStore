@@ -56,6 +56,27 @@ const productos = {
       precioPromocion: "$150.000",
       img: "imagenes/productos/naisu.jpg",
     },
+    {
+      nombre: "Reloj HK11 Pro Max 46mm ⌚️✨",
+      marca: "HK",
+      desc: "Funciones inteligentes con IA • Conectividad Bluetooth • Recordatorios y agenda • Vista previa de fotografías en tiempo real • Álbum de fotos local • Aplicaciones y juegos para personalizar tu experiencia.",
+      precioPromocion: "$160.000",
+      img: "imagenes/productos/hk11-promax-46mm.jpg",
+    },
+    {
+      nombre: "Reloj HK11 Ultra 3 49mm ⌚️✨🔥",
+      marca: "HK",
+      desc: "Funciones inteligentes con IA • Conectividad Bluetooth • Recordatorios y agenda • Vista previa de fotografías en tiempo real • Álbum de fotos local • Aplicaciones y juegos para personalizar tu experiencia.",
+      precioPromocion: "$160.000",
+      img: "imagenes/productos/hk11-ultra3-49mm.jpg",
+    },
+    {
+      nombre: "Reloj HK11 Mini 42mm ⌚️✨",
+      marca: "HK",
+      desc: "Ideal para mujer 💁‍♀️ • Funciones inteligentes con IA • Conectividad Bluetooth • Recordatorios y agenda • Vista previa de fotografías en tiempo real • Álbum de fotos local • Aplicaciones y juegos para personalizar tu experiencia.",
+      precioPromocion: "$150.000",
+      img: "imagenes/productos/hk11-mini-42mm.jpg",
+    },
   ],
   parlantes: [
     {
